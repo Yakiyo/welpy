@@ -8,6 +8,5 @@
             "description": "A discord bot token, required for making requests to the discord api",
             "required": true
         }
-    ],
-    "cron": "default cron expression (for eg. 3 minutes)"
+    ]
 }
