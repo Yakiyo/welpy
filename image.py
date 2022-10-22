@@ -11,7 +11,7 @@ def create_image(user):
 	if user is None:
 		img.save(buffer, format='PNG', quality=90)
 		buffer.seek(0)
-		return Response(buffer, mimetype='image/png', status=200)
+		return Response(buffer, mimetype='image/jpg', status=200)
 
 	# Paste the avatar
 	av = Image.open(get(user["avatar"], stream=True, timeout=5).raw)
@@ -47,4 +47,4 @@ def create_image(user):
 	img.save(buffer, format='PNG', quality=90)
 	buffer.seek(0)
 	img.close()
-	return Response(buffer, mimetype='image/png', status=200)
+	return Response(buffer, mimetype='image/jpg', status=200)
