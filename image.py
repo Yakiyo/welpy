@@ -11,7 +11,7 @@ def create_image(user):
 	if user is None:
 		img.save(buffer, format='PNG', quality=90)
 		buffer.seek(0)
-		return Response(buffer, mimetype='image/jpg', status=200)
+		return Response(buffer, headers={'Cache-Control': 'no-cache'}, mimetype='image/jpg', status=200)
 
 	# Paste the avatar
 	av = Image.open(get(user["avatar"], stream=True, timeout=5).raw)
@@ -40,6 +40,7 @@ def create_image(user):
 		font = ImageFont.truetype('./assets/Poppins-Bold.ttf', fsize)
 		tw = d.textsize(name, font=font)[0]
 
+	# Centers the text at a specific point, so half of the text is on both side of that point
 	d.text((550 - tw / 2, 1200), name, font=font, fill='#00b9bd')
 	# draw rectangular border around av
 	d.rounded_rectangle([(250, 550), (850, 1150)], radius=5, width=7, outline='#00b9bd')
@@ -47,4 +48,4 @@ def create_image(user):
 	img.save(buffer, format='PNG', quality=90)
 	buffer.seek(0)
 	img.close()
-	return Response(buffer, mimetype='image/jpg', status=200)
+	return Response(buffer, headers={'Cache-Control': 'no-cache'}, mimetype='image/jpg', status=200)
