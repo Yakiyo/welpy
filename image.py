@@ -48,4 +48,4 @@ def create_image(user):
 	img.save(buffer, format='PNG', quality=90)
 	buffer.seek(0)
 	img.close()
-	return Response(buffer, headers={'Cache-Control': 'no-cache'}, mimetype='image/jpg', status=200)
+	return Response(buffer, headers={'Cache-Control': 'no-cache'}, mimetype='image/png', status=200)
