@@ -4,7 +4,7 @@ from flask import Response
 from PIL import Image, ImageOps, ImageFont, ImageDraw
 
 def create_image(user):
-	img = Image.open('./assets/welcome.jpg')
+	img = Image.open('./assets/welcome.png')
 	buffer = BytesIO()
 
 	# Return the empty image when user is None for whatever reason may it be
