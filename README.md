@@ -28,15 +28,22 @@ Its pretty straight forward and works in a simple manner. The entry point is [ma
 ```env
 DISCORD_TOKEN=your-token-here
 ```
-5) Deploy your app to someplace like [**Deta**](https://deta.sh). Read more on deploying to deta [here](https://docs.deta.sh/docs/micros/getting_started).
+5) Deploy your app to someplace like [**Deta**](https://deta.sh). Install the deta cli and run the following commands in your terminal
+```
+$ deta deploy # deploys to deta
+
+$ deta update -e .env # loads env vars from `.env` file
+```
+You can alternatively click on the "Deploy to Deta" button [here](#welpy), which makes the steps simpler.
+
+Read more on deploying to deta [here](https://docs.deta.shdocs/micros/getting_started).
 
 ## Demo Usage
 ```
-https://welpy.deta.dev/img?id=695307292815654963
+https://mfn9ho.deta.dev/img?id=695307292815654963
 ```
-<img width="500px" src="https://welpy.deta.dev/img?id=695307292815654963">
+<img width="500px" src="https://mfn9ho.deta.dev/img?id=695307292815654963">
 
-<!-- ![Demo Image](https://welpy.deta.dev/img?id=695307292815654963) -->
 
 ## Author
 **welpy** © [Yakiyo](https://github.com/Yakiyo). Authored and maintained by Yakiyo.
