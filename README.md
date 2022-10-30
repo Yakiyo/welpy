@@ -22,7 +22,7 @@ Its pretty straight forward and works in a simple manner. The entry point is [ma
 
 ### Steps
 1) [**Fork**](https://github.com/Yakiyo/welpy/fork) this repo.
-2) Replace [**welcome.jpg**](./assets/welcome.jpg) with your background image.
+2) Replace [**welcome.png**](./assets/welcome.png) with your background image.
 3) With a bit of python knowledge, you can fiddle around with [**image.py**](./image.py) and make the image show up as you want. If you don't know enough python, you can use a image thats similar to the current image so that even if the avatar shows up in the same spot, it looks cool. Or just put some effort and learn python. Its pretty cool and you can flex to your friends.
 4) Create a file named `.env` and add a discord bot token, this is required for making requests to discord.
 ```env
