@@ -40,9 +40,9 @@ Read more on deploying to deta [here](https://docs.deta.shdocs/micros/getting_st
 
 ## Demo Usage
 ```
-https://mfn9ho.deta.dev/img?id=695307292815654963
+https://welpy.deta.dev/img?id=695307292815654963
 ```
-<img width="500px" src="https://mfn9ho.deta.dev/img?id=695307292815654963">
+<img width="500px" src="https://welpy.deta.dev/img?id=695307292815654963">
 
 
 ## Author
