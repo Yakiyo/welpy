@@ -34,7 +34,7 @@ $ deta deploy # deploys to deta
 
 $ deta update -e .env # loads env vars from `.env` file
 ```
-You can alternatively click on the "Deploy to Deta" button [here](#welpy), which makes the steps simpler.
+You can alternatively click on the "Deploy to Deta" button [here](#welpy-), which makes the steps simpler.
 
 Read more on deploying to deta [here](https://docs.deta.shdocs/micros/getting_started).
 
