@@ -4,4 +4,11 @@ micros:
   - name: welpy
     src: ./
     engine: python3.9
+    public: true
+    presets:
+      env:
+        - name: DISCORD_TOKEN
+          description: A Discord Bot token used for accessing user images and data from the api.
     primary: true
+    public_routes:
+      - "/*"
