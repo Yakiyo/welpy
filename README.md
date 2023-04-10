@@ -34,15 +34,15 @@ $ deta deploy # deploys to deta
 
 $ deta update -e .env # loads env vars from `.env` file
 ```
-You can alternatively click on the "Deploy to Deta" button [here](#welpy), which makes the steps simpler.
+You can alternatively click on the "Deploy to Deta" button [here](#welpy-), which makes the steps simpler.
 
 Read more on deploying to deta [here](https://docs.deta.shdocs/micros/getting_started).
 
 ## Demo Usage
 ```
-https://mfn9ho.deta.dev/img?id=695307292815654963
+https://welpy.deta.dev/img?id=695307292815654963
 ```
-<img width="500px" src="https://mfn9ho.deta.dev/img?id=695307292815654963">
+<img width="500px" src="https://welpy.deta.dev/img?id=695307292815654963">
 
 
 ## Author
